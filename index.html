@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <form class="Information">
+        <fieldset id="main">
+            <legend Class="PersonalData">Personal Data</legend>
+            <fieldset id="Name" ><legend class="PersonalData" style="padding: 20px 0;">Your Name</legend>
+                <table>
+                    <tr>
+                        <td><label name="firstname" class="firstname">First Name: </label></td>
+                        <td><input type="text" placeholder="Ex.Remon" name="firstname" class="firstname" required></td>
+                    </tr>
+                    <tr>
+                        <td><label name="lastname" class="lastname">Last Name: </label></td>
+                        <td><input type="text" placeholder="Ex.Youssef" name="lastname" class="lastname" required></td>
+                    </tr>
+            </table>
+            </fieldset><br/>
+            <table>
+                <tr>
+                    <td><label name="Telephone" class="Telephone">Telephone Nr.: </label></td>
+                    <td><input type="tel" name="Telephone" class="Telephone"></td>
+                </tr>
+                <tr>
+                    <td><label name="email" class="email">Email: </label></td>
+                    <td><input type="email" name="email" class="email" ></td>
+                </tr>
+                <tr>
+                    <td><label name="password" class="password">Password:</label></td>
+                    <td><input type="password" name="password" class="password"></td>
+                </tr>
+                <tr>
+                    <td><label name="password" class="password">Re Password</label></td>
+                    <td><input type="password" name="password" class="password"></td>
+                </tr>
+                <tr>
+                    <td><label name="DOB" class="DOB">Date of Birth:</label></td>
+                    <td><input type="date" name="DOB" class="DOB" ></td>
+                </tr>
+                <tr></tr>
+                <tr><td><br><!-- empty row to break a distance between Parts--></td></tr>
+                <tr>
+                    <td><label for="Gender" id="Gender">Gender:</label></td>
+                    <td><input Type="radio" name="Gender" id="male" value="Male"/>
+                        <label for="male">male</label><br/>
+                        <input type="radio" name="Gender" id="female" value="Female"/>
+                        <label for="female">female</label><br/>
+                        <input Type="radio" name="Gender" id="other" value="Other"/>
+                        <label for="other">other</label>
+                    </td>
+                </tr>
+                <tr><td><br> <!-- empty row to break a distance between Parts--></td></tr>
+                <tr>
+                    <td><label for="WebLang" class="WebLang">Web languages:</label></td>
+                    <td>
+                        <input type="checkbox" name="WebLang" id="html" value="html"/>
+                        <label for="html">HTML</label>
+                        <input type="checkbox" name="WebLang" id="css" value="css"/>
+                        <label for="css">CSS</label>
+                        <input type="checkbox" name="WebLang" id="JS" value="JS"/>
+                        <label for="JS">JS</label>
+                        <input type="checkbox" name="WebLang" id="Angular" value="Angular"/>
+                        <label for="Angular">Angular</label>
+                    </td>
+                </tr>
+                <tr><td><br> <!-- empty row to break a distance between Parts--></td></tr>
+                <tr>
+                    <td><label for="cars">Choose your car:</label></td>
+                    <td><select id="cars" name="cars">
+                        <option selected hidden>choose your car</option>
+                        <option value="volvo">Volvo</option>
+                        <option value="Suzuki">Suzuki</option>
+                        <option value="BMW">BMW</option>
+                        <option value="audi">Audi</option>
+                        <option value="Lancer">Lancer</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td><label for="languages">Languages</label></td>
+                    <td><input list="languages" name="Languages">
+                        <datalist id="languages">
+                            <option value="Russian">
+                            <option value="English">
+                            <option value="German">
+                            <option value="French">
+                            <option value="Arabic">
+                        </datalist>
+                    </td>
+                </tr>
+            </table> 
+            <input type="image" src="./Submit.jpg" alt="submit" width="90" height="40">
+        </fieldset>
+    </form>
+</body>
+</html>
